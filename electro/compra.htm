@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Producto</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-banner">
+        <div class="brand-logo">
+          <img src="../img/logo-commerce.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#" id="is">Iniciar Sesión</a></li>
+          <li><a href="#" id="cc">Crear Cuenta</a></li>
+          <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="link-navegacion">
+      <span id="prueba">Volver al listado</span>
+      <a href="#" id="link-cat"></a> >
+      <a href="#" id="link-subcat"></a>
+    </div>
+    <div class="view-item">
+      <div class="carrusel" id="carrusel">
+        
+      </div>
+      <div class="view-item-img">
+        <div class="img-full" id="img-full">
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="items-detalles" id="items-detalles">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="descripcion">
+      <div class="descripcion-div">
+        <h2>descripcion</h2>
+        <textarea id="descripcion" disabled></textarea>  
+      </div>
+      <div class="medios-pago-producto">
+        <label>Medio de pago</label>
+        <label>Tajetas de crédito</label>
+        <img src="../img/payments.png" alt="">
+        <label>Puntos Electro</label>
+        <img src="../img/logo-commerce.png" alt="" style="width: 100px">
+        <label>Paypal</label>
+        <img src="../img/paypal.png" alt="" style="width: 100px">
+        <label>Efectivo</label>
+        <img src="../img/logo.png" alt="" style="width: 100px">
+      </div>
+      <div class="preguntas">
+        <h2>Preguntas y respuestas</h2>
+        <div class="input-pregunta">
+          <input type="text" placeholder="Escribe una pregunta o palabra clave" id="input-question">
+          <button>Enviar</button>
+        </div>
+        <div class="mis-preguntas" id="preguntas-usuario">
+          
+        </div>
+        <div class="mis-preguntas" id="preguntas-comunidad">
+          
+        </div>
+      </div>
+
+      <div class="resenas-productos">
+        <h2>Calificación de otros usuarios:</h2>
+        <div class="card-resena">
+          <div class="title-resena">
+            <label>Jesus raymundo hernandez Zapata</label>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reiciendis esse nulla eaque beatae qui.</p>  
+        </div>
+      </div>
+    </div>
+    
+    <div class="alert-mensaje" id="alerta">
+
+    </div>
+  </div>
+  <script src="../scripts/jquery.elevateZoom-3.0.8.min.js"></script>
+  <script src="../scripts/compra.js"></script>
+</body>
+
+</html>

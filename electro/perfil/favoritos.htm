@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Favoritos</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+  <div class="action-buttons-perfil">
+    <button title="Inicio"><i class="material-icons">home</i></button>
+    <button title="Compras"><i class="material-icons">local_grocery_store</i></button>
+    <button title="Ventas"><i class="material-icons">shop</i></button>
+    <button title="Publicaciones"><i class="material-icons">store</i></button>
+    <button title="Favoritos" class="active"><i class="material-icons">favorite</i></button>
+    <button title="Preguntas"><i class="material-icons">message</i></button>
+    <button class="close-se" title="Cerrar Sesión"><i class="material-icons">power_settings_new</i></button>
+  </div>
+</body>
+  <div class="container" id="container-fav">
+    <h4>Favoritos</h4>
+    <div class="table-fav-items">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th style="width: 600px;"></th>
+            <th>Precio</th>
+            <th>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="body-favorito">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="alert-mensaje" id="alerta">
+
+  </div>
+  <script src="../../scripts/favoritos.js"></script>
+</html>

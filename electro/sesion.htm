@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Inicio Sesión</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-banner">
+        <div class="brand-logo">
+          <img src="../img/logo-commerce.png" alt="">
+        </div>
+        <ul>
+          <li><a href="../index.htm">Inicio</a></li>
+        </ul>
+      </div>
+  </nav>
+  </div>
+  <div class="container-login-metodo">
+    <div class="sing-in" id="reg">
+      <span>Registrar</span>
+      <div class="form-medio">
+        <label for="">Nombre(s)</label>
+        <label for="">Apellidos</label>
+        <input type="text" name="" id="nombre">
+        <input type="text" name="" id="apellido">
+      </div>
+      <div class="form-compled">
+        <label for="">Correo</label>
+        <input type="email" name="" id="email-registro">
+      </div>
+      <div class="form-medio">
+        <label for="">CP</label>
+        <label for="">Estado</label>
+        <input type="number" name="" id="input-cp" maxlength="5">
+        <input type="text" name="" id="estado" disabled placeholder="Estado">
+        <input type="text" name="" id="ciudad" placeholder="Ciudad" disabled>
+        <input type="text" name="" id="municipio" placeholder="Municipio" disabled>
+        <label for=""></label>
+        <label for="">Calle</label>
+        <select name="" id="select-col">
+
+        </select>
+        <input type="text" name="" id="calle">
+      </div>
+      <div class="form-medio">
+        <label for="">Crear contraseña</label>
+        <label for="">Repetir contraseña</label>
+        <input type="password" name="" id="password">
+        <input type="password" name="" id="">
+      </div>
+      <button id="btn-registro">Registrar</button>
+    </div>
+
+    <div class="sing-in" id="ins">
+      <span>Iniciar Sesión</span>
+      <div class="form-compled">
+        <label for="">Email</label>
+        <input type="email" name="" id="email-log">
+        <label for="">Contraseña</label>
+        <input type="password" name="" id="pass-log">
+      </div>
+      <button id="btn-log">Iniciar Sesión</button>
+    </div>
+
+  </div>
+
+  <script src="../scripts/sesion.js"></script>
+</body>
+
+</html>

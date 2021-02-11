@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- GOOGLE FONT -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-banner">
+        <div class="brand-logo">
+          <img src="img/logo-commerce.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#" id="is">Iniciar Sesión</a></li>
+          <li><a href="#" id="cc">Crear Cuenta</a></li>
+          <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+      </div>
+      <div class="nav-categorias">
+        <ul>
+          <li><a href="#" class="cat">Celulares y telefonía</a>
+            <ul>
+              <li><a href="#">Celulares y smartphones</a></li>
+              <li><a href="#">Audifonos</a></li>
+              <li><a href="#">Carcasas y fundas</a></li>
+              <li><a href="#">Smartwatches y smartbands</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cat">Cámaras y accesorios</a>
+            <ul>
+              <li><a href="#">Accesorios para cámaras</a></li>
+              <li><a href="#">Cámaras</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cat">Consolas y videojuegos</a>
+            <ul>
+              <li><a href="#">Consolas</a></li>
+              <li><a href="#">Juegos</a></li>
+              <li><a href="#">Accesorios consolas</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cat">Computacíon</a>
+            <ul>
+              <li><a href="#">Laptos</a></li>
+              <li><a href="#">Tablets y accesorios</a></li>
+              <li><a href="#">Impresión</a></li>
+              <li><a href="#">Monitores</a></li>
+              <li><a href="#">Mouse y teclados</a></li>
+              <li><a href="#">Webcam y audio</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cat">Electronica, audio y video</a>
+            <ul>
+              <li><a href="#">Audifonos</a></li>
+              <li><a href="#">Bocinas</a></li>
+              <li><a href="#">Minicomponentes</a></li>
+              <li><a href="#">Teatro casa</a></li>
+              <li><a href="#">Accesorios electronica</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="head-categoria">
+      CELULARES Y SMARTPHONES
+      <h4>Encuentra lo mejor en smartphones</h4>
+    </div>
+    <div class="categoria">
+      <div class="col-s4"  data-cat="Audifonos">
+        <div class="imagen">
+          <img src="img/D_NQ_NP788822-MLA42533989846_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card">
+          <h3>AUDÍFONOS</h3>
+        </div>
+      </div>
+      <div class="col-s4" data-cat="Carcasas y fundas">
+        <div class="imagen">
+          <img src="img/D_NQ_NP877182-MLA42533989874_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card">
+          <h3>CARCASAS Y FUNDAS</h3>
+        </div>
+      </div>
+      <div class="col-s4" data-cat="Smartwatches y smartbands">
+        <div class="imagen">
+          <img src="img/D_NQ_NP666201-MLA42533939932_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>SMARTWATCHES Y SMARTBANDS</h3>
+        </div>
+      </div>
+    </div>
+    <div class="head-categoria">
+      COMPUTACIÓN
+      <h4>Todo para armar tu Home Office</h4>
+    </div>
+    <div class="categoria">
+      <div class="col-s3" data-cat="Mouse y teclados">
+        <div>
+          <img src="img/D_Q_NP_622480-MLA41586024465_042020-V.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>Mouse y teclados</h3>
+        </div>
+      </div>
+      <div class="col-s3" data-cat="Webcam y audio">
+        <div>
+          <img src="img/D_Q_NP_935592-MLA41585883606_042020-V.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>Webcam y audio</h3>
+        </div>
+      </div>
+      <div class="col-s3" data-cat="Impresión">
+        <div>
+          <img src="img/D_Q_NP_766840-MLA41584273135_042020-V.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>Impresoras</h3>
+        </div>
+      </div>
+      <div class="col-s3" data-cat="Monitores">
+        <div>
+          <img src="img/D_Q_NP_856492-MLA41584273336_042020-V.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>Monitores</h3>
+        </div>
+      </div>
+    </div>
+    <div class="head-categoria">
+      CÁMARA Y ACCESORIOS
+      <h4>Descubre miles de productos</h4>
+    </div>
+    <div class="categoria">
+      <div class="col-s6" data-cat="Cámaras">
+        <div>
+          <img src="img/D_NQ_NP740890-MLA44220940170_122020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>CÁMARAS DIGITALES</h3>
+        </div>
+      </div>
+      <div class="col-s6" data-cat="Cámaras">
+        <div>
+          <img src="img/D_NQ_NP765201-MLA44220940478_122020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>CÁMARAS DE VIDEO</h3>
+        </div>
+      </div>
+    </div>
+    <div class="head-categoria">
+      ELECTRÓNICA, AUDIO Y VIDEO
+      <h4>Encuentra lo mejor en audio</h4>
+    </div>
+    <div class="categoria">
+      <div class="col-s3" data-cat="Audifonos">
+        <div>
+          <img src="img/D_NQ_NP869756-MLA42786047469_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>AUDÍFONOS</h3>
+        </div>
+      </div>
+      <div class="col-s3" data-cat="Bocinas">
+        <div>
+          <img src="img/D_NQ_NP659045-MLA42785924683_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>BOCINAS</h3>
+        </div>
+      </div>
+      <div class="col-s3" data-cat="Minicomponentes">
+        <div>
+          <img src="img/D_NQ_NP625182-MLA42785924696_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>MINICOMPONENTES</h3>
+        </div>
+      </div>
+      <div class="col-s3" data-cat="Teatro casa">
+        <div>
+          <img src="img/D_NQ_NP628848-MLA42786047446_072020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>TEATRO EN CASA</h3>
+        </div>
+      </div>
+    </div>
+    <div class="head-categoria">
+      CONSOLAS Y VIDEOJUEGOS
+      <h4>Lo mejor del mundo gamer</h4>
+    </div>
+    <div class="categoria">
+      <div class="col-s4" data-cat="Consolas">
+        <div>
+          <img src="img/D_NQ_NP808942-MLA43483925123_092020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>CONSOLAS</h3>
+        </div>
+      </div>
+      <div class="col-s4" data-cat="Juegos">
+        <div>
+          <img src="img/D_NQ_NP776150-MLA43482877611_092020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>JUEGOS</h3>
+        </div>
+      </div>
+      <div class="col-s4" data-cat="Accesorios consolas">
+        <div>
+          <img src="img/D_NQ_NP669345-MLA43482774843_092020-B.webp" alt="">
+        </div>
+        <div class="footer-card" >
+          <h3>ACCESORIOS</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" style="display: flex">
+      <div class="footer-content">
+        <span>Redes sociales</span>
+        <ul>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <span>Ayuda</span>
+        <ul>
+          <li><a href="electro/comprar.htm">Comprar</a></li>
+          <li><a href="electro/vender.htm">Vender</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <span>Formas pago</span>
+        <ul>
+          <li><a href="electro/comprar.htm">Puntos Electro</a></li>
+          <li><a href="electro/comprar.htm">Tarjeta crédito</a></li>
+          <li><a href="electro/comprar.htm">Paypal</a></li>
+          <li><a href="electro/comprar.htm">Efectivo</a></li>
+        </ul>
+      </div>
+      <div class="form-contacto">
+        <span>Contactanos</span>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>Enviar</button>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

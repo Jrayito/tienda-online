@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Preguntas</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+  <div class="action-buttons-perfil">
+    <button title="Inicio"><i class="material-icons">home</i></button>
+    <button title="Compras"><i class="material-icons">local_grocery_store</i></button>
+    <button title="Ventas"><i class="material-icons">shop</i></button>
+    <button title="Publicaciones"><i class="material-icons">store</i></button>
+    <button title="Favoritos"><i class="material-icons">favorite</i></button>
+    <button title="Preguntas"  class="active"><i class="material-icons">message</i></button>
+    <button class="close-se" title="Cerrar Sesión"><i class="material-icons">power_settings_new</i></button>
+  </div>
+
+  <div class="container" id="container-question">
+    <h4>Preguntas</h4>
+    <div class="input-radio">
+      <input type="radio" name="ques" id="question-buy">
+      <label for="question-buy">Preguntas Compras</label>
+      <input type="radio" name="ques" id="question-sell">
+      <label for="question-sell">Preguntas Ventas</label> 
+    </div>
+    <div class="content-question">
+      <div class="content-table-question">
+        <table>
+          <tbody id="body-pregutas">
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="content-dialog" id="content-formulario-preguntas">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="alert-mensaje" id="alerta">
+
+  </div>
+  <script src="../../scripts/preguntas.js"></script>
+</body>
+
+</html>

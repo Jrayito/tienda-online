@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Productos</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-banner">
+        <div class="brand-logo">
+          <img src="../img/logo-commerce.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#" id="is">Iniciar Sesión</a></li>
+          <li><a href="#" id="cc">Crear Cuenta</a></li>
+          <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 id="title" style="margin-top: 20px;"></h1>
+  </div>
+  <div class="container" style="display: flex;">
+    <div class="search">
+      <div style="display: flex;">
+        <i class="icon material-icons">star</i>
+        <h4>Categorías</h4>
+      </div>
+      <div id="input-key">
+        <div>
+          <input type="text" id="key">
+          <button><i class="material-icons">search</i></button>
+        </div>
+        <div id="link-cat">
+          <a href="#">Ver Todo</a>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <i class="icon material-icons">attach_money</i>
+        <h4>Precio</h4>
+      </div>
+      <div id="input-price">
+        <input type="text" placeholder="Min" id="min">
+        <input type="text" placeholder="Max" id="max">
+        <button id="aplicarPrecio">Aplicar</button>
+      </div>
+    </div>
+    <div class="items" id="items">
+      
+    </div>
+  </div>
+
+  <div class="alert-mensaje" id="alerta">
+
+  </div>
+  <script src="../scripts/productos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Publicaciones</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+  <div class="action-buttons-perfil">
+    <button title="Inicio"><i class="material-icons">home</i></button>
+    <button title="Compras"><i class="material-icons">local_grocery_store</i></button>
+    <button title="Ventas"><i class="material-icons">shop</i></button>
+    <button title="Publicaciones" class="active"><i class="material-icons">store</i></button>
+    <button title="Favoritos"><i class="material-icons">favorite</i></button>
+    <button title="Preguntas"><i class="material-icons">message</i></button>
+    <button class="close-se" title="Cerrar Sesión"><i class="material-icons">power_settings_new</i></button>
+  </div>
+  <div class="container" id="container-publicaciones">
+    <button id="new-item">Publicar</button>
+    <h4>Publicaciones</h4>
+    <div class="container-items-user">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 450px;">Producto</th>
+            <th>Categoria</th>
+            <th style="width: 100px;">Subcategoria</th>
+            <th>Stock</th>
+            <th>Precio</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="body-productos">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="content-modal-item-new">
+      <button class="close-modal"><i class="material-icons">close</i></button>
+      <h3>Nuevo producto</h3>
+      <div class="content-form-item">
+        <form>
+          <div class="modulo-datos-form">
+            <input type="text" name="" id="name-item" placeholder="Nombre producto">
+            <textarea name="" id="res-item" cols="30" rows="10" placeholder="Pequeña reseña del producto" maxlength="200"></textarea>
+            <div class="inputs-media-item">
+              <select name="" id="categoria-items">
+                <option value="0">Categoria</option>
+                <option value="10">Celulares y Telefonía</option>
+                <option value="20">Computación</option>
+                <option value="30">Cámara y accesorios</option>
+                <option value="40">Electrónica,audio y video</option>
+                <option value="50">Consolas y videojuegos</option>
+              </select>
+              <select name="" id="subcategoria">
+                <option value="0">Subcategoria</option>
+              </select>
+              <input type="text" name="" id="marca" placeholder="Marca">
+              <input type="text" name="" id="modelo" placeholder="Modelo">
+              <select id="color">
+                <option value="0">Color</option>
+                <option value="1">Rojo</option>
+                <option value="2">Negro</option>
+                <option value="3">Blanco</option>
+                <option value="4">Azul</option>
+                <option value="5">Verde</option>
+                <option value="6">Naranja</option>
+                <option value="7">Amarillo</option>
+                <option value="8">Marrón</option>
+                <option value="9">Morado</option>
+                <option value="10">Rosa</option>
+              </select>
+              <select name="" id="estado">
+                <option value="0">Estado</option>
+                <option value="1">Nuevo</option>
+                <option value="2">Usado</option>
+              </select>
+            </div>
+            <div class="ckeck-precio">
+              <input type="checkbox" name="" id="box-oferta">
+              <label for="box-oferta">Ofertar</label><br>
+              <input type="number" name="" id="precio" placeholder="Precio">
+              <input type="number" name="" id="por_precio" placeholder="% descuento" disabled>
+              <input type="number" name="" id="precio_oferta" disabled>
+              <input type="number" name="" id="stock" placeholder="Stock">
+            </div>
+          </div>
+          <div class="modulo-des-form">
+            <textarea name="" id="desc" cols="30" rows="10" placeholder="Descripción completa de producto" maxlength="6000"></textarea>
+            <button id="btn-guardar">Guardar</button>
+          </div>
+        </form>
+      </div>
+      <div class="content-image-item">
+        <form id="formulario" enctype="multipart/form-data">
+          <input type="hidden" name="input-hide" id="input-hide">
+          <input type="file" name="file[]" id="file" multiple disabled=>
+        </form>
+        <div class="vista-previa"></div>
+        <button  id="btn-files" disabled>Subir Archivos</button>
+      </div>
+    </div>
+  </div>
+  <div class="alert-mensaje" id="alerta">
+
+  </div>
+  <script src="../../scripts/publicaciones.js"></script>
+</body>
+
+</html>

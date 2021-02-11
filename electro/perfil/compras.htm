@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Compras</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+  <div class="action-buttons-perfil">
+    <button title="Inicio"><i class="material-icons">home</i></button>
+    <button title="Compras" class="active"><i class="material-icons">local_grocery_store</i></button>
+    <button title="Ventas"><i class="material-icons">shop</i></button>
+    <button title="Publicaciones"><i class="material-icons">store</i></button>
+    <button title="Favoritos"><i class="material-icons">favorite</i></button>
+    <button title="Preguntas"><i class="material-icons">message</i></button>
+    <button class="close-se" title="Cerrar Sesión"><i class="material-icons">power_settings_new</i></button>
+  </div>
+  <div>
+    <div class="container" id="container-compras">
+      <h4>Compras</h4>
+      <div class="container-compras-table" id="container-compras-table">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="content-modal-calificar">
+      <button class="close-modal"><i class="material-icons">close</i></button>
+      <span>Tu opinion ayuda a otros compradores</span>
+      <div class="contenedor-opinion">
+        <div class="calificar-producto">
+          <div class="botones">
+            <input type="radio" name="estrellas" value="5" id="radio1">
+            <label for="radio1"><i class="material-icons">start</i></label>
+            <input type="radio" name="estrellas" value="4" id="radio2">
+            <label for="radio2"><i class="material-icons">start</i></label>
+            <input type="radio" name="estrellas" value="3" id="radio3">
+            <label for="radio3"><i class="material-icons">start</i></label>
+            <input type="radio" name="estrellas" value="2" id="radio4">
+            <label for="radio4"><i class="material-icons">start</i></label>
+            <input type="radio" name="estrellas" value="1" id="radio5">
+            <label for="radio5"><i class="material-icons">start</i></label>
+          </div>
+          <textarea name="" id="calificar-text" cols="30" rows="10"></textarea>
+          <button id="btn-calificar-enviar">Enviar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="alert-mensaje" id="alerta">
+
+  </div>
+  <script src="../../scripts/compras.js"></script>
+</body>
+
+</html>

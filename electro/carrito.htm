@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro MX - Pago</title>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- MATERIAL ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-banner">
+        <div class="brand-logo">
+          <img src="../img/logo-commerce.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#" id="is">Iniciar Sesión</a></li>
+          <li><a href="#" id="cc">Crear Cuenta</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="carrito">
+      <div class="carrito-items">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th style="width: 400px"></th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="body-carrito">
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="carrito-pago">
+        <div class="total-items">
+          <table>
+            <tbody>
+              <tr>
+                <td>Subtotal</td>
+                <td id="subtotal"></td>
+              </tr>
+              <tr>
+                <td>Descuento</td>
+                <td id="descuento"></td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td id="total"></td>
+              </tr>
+            </tbody>
+          </table>
+          <img src="../img/payments.png" alt="">
+          <button id="btn-pagar">Pagar</button>
+          <button id="return">Continuar comprando</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert-mensaje" id="alerta">
+
+  </div>
+
+  <div class="modal">
+    <div class="content-modal">
+      <div class="detalles-compra">
+        <h3>Vista general</h3>
+        <div>
+          <table>
+            <tr>
+              <td>Entrega:</td>
+              <td id="mEntrega">--</td>
+            </tr>
+            <tr>
+              <td>Tipo entrega:</td>
+              <td id="mTipo">--</td>
+            </tr>
+            <tr>
+              <td>Método pago:</td>
+              <td id="mPago">--</td>
+            </tr>
+            <tfoot>
+              <tr>
+                <td>Total</td>
+                <td id="mTotal"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="met-pago">
+        <button class="close-modal"><i class="material-icons">close</i></button>
+        <div class="input-radio">
+          <span>Entrega</span>
+          <input type="radio" name="metodo" id="dom">
+          <label for="dom">Domicilio</label>
+          <input type="radio" name="metodo" id="suc">
+          <label for="suc">Recoger sucursal</label>
+        </div>
+        <div class="body-tipo-pago">
+          <div class="sub-pago">
+            <input type="radio" name="metodo-pago" id="electro" class="pago">
+            <label for="electro" class="title-pago">Puntos Electro</label>
+            <img src="../img/logo-commerce.png">
+            <div class="metodo-pago electro">
+              <div>
+                <label>Puntos disponibles:</label>
+                <span id="puntos-disponibles">puntos</span> <br>
+                <button id="btn-puntos">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="sub-pago">
+            <input type="radio" name="metodo-pago" id="paypal" class="pago">
+            <label for="paypal" class="title-pago">Paypal</label>
+            <img src="../img/paypal.png">
+            <div class="metodo-pago paypal">
+              <div>
+                <a href="https://www.paypal.com/mx/home" target="_blank" id="btn-pago-paypal">Pagar Paypal</a>
+              </div>
+            </div>
+          </div>
+          <div class="sub-pago">
+            <input type="radio" name="metodo-pago" id="card" class="pago">
+            <label for="card" class="title-pago">Tarjeta de credito</label>
+            <img src="../img/payments.png" style="width: 150px;">
+            <div class="metodo-pago card">
+              <span id="alerta"></span>
+              <div class="metodo-card">
+                
+                  <div>
+                    <label for="">Nombre:</label>
+                    <input type="text" name="" id="name-card">
+                    <label for="">Número tarjeta</label>
+                    <input type="number" name="" id="number-card">
+                  </div>
+                  <div class="card-detalles-card">
+                    <label for="">Expiración</label>
+                    <input type="number" name="" id="mes-card" placeholder="MM"> /
+                    <input type="number" name="" id="anio-card" placeholder="YY">
+                    <input type="number" name="" id="cvv-card" placeholder="CVV">
+                  </div>
+                  <button id="btn-card">Confirmar</button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="sub-pago">
+            <input type="radio" name="metodo-pago" id="oxxo" class="pago">
+            <label for="oxxo" class="title-pago">Pago Oxxo</label>
+            <img src="../img/logo.png" style="width: 50px;">
+            <div class="metodo-pago oxxo">
+              <button id="btn-pago-oxxo">Pago Efectivo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="../scripts/carrito.js"></script>
+
+</html>
